@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            margin: 20px;
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        label {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: #ebe9e9;
+        }
+
+
+        input[type="submit"] {
+            background-color: #341eff;
+            color: #fff;
+            border: none;
+            padding: 1rem 1rem;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="display: flex; flex-direction: column; align-items: center; background-color: #ebe9e9; width: 20rem; padding-bottom: 1rem;">
+        <h1>Đăng kí tài khoản</h1>
+        <div style="background-color: #ff7777; padding: 0.3rem;">
+            <form>
+                <label for="name">Họ và tên:</label>
+                <input type="text" id="name" name="name" required>
+
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+
+                <label for="pass">Mật khẩu:</label>
+                <input type="password" name="pass" id="pass">
+
+                <label for="pass">Xác nhận mật khẩu:</label>
+                <input type="password" name="pass" id="pass">
+
+
+            </form>
+                    <div style="margin-right: 11rem;">
+                        <input type="submit" value="đăng kí">
+                    </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
