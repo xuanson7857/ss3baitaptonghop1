@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <title>Liên hệ với chúng tôi</title>
+</head>
+<style>
+    form {
+        margin: 20px;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    label {
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+
+
+    input[type="submit"] {
+        background-color: #000000;
+        color: #fff;
+        border: none;
+        padding: 1rem 1rem;
+        border-radius: 5px;
+    }
+</style>
+
+<body>
+    <div style="display: flex; flex-direction: column;align-items: center; background-color: #ccc; width: 20rem; padding-bottom: 1rem;">
+        <h1>Tuyển dụng</h1>
+        <div style="background-color: white; padding: 0.5rem;">
+            <form method="post">
+                <label for="name">Họ và tên:</label>
+                <input type="text" id="name" name="name" required>
+
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label>CV:</label>
+                <input type="file">
+
+                <label for="message">Tin nhắn:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+            </form>
+            <input type="submit" value="Gửi">
+        </div>
+    </div>
+
+</body>
